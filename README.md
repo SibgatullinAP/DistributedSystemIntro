@@ -1,2 +1,2 @@
 # DistributedSystemIntro
-Lectures for MSU course Distributed Systems: Introduction
+Билеты по спецкурсу Мехмата МГУ "Введение в распределенные системы"
