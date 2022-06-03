@@ -2,5 +2,5 @@
 *.log
 *.gz
 *.aux
-*.pdf
 *.toc
+*.dvi
