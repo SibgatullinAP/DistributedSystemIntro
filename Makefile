@@ -3,5 +3,5 @@ all:
 	rm -f *.log *.aux *.out *.toc *.gz 
 
 clean:
-	rm -f *.log *.aux *.out *.toc *.gz *.pdf
+	rm -f *.log *.aux *.out *.toc *.gz *.pdf *.dvi
 
