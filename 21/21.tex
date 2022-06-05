@@ -49,7 +49,7 @@ $state_p \in \{sleep, lost\text{(Проиграл)}, leader, cand\text{(Канд
     \State $recv(<message, q>, Prev(p))$ \Comment{Ждём от соседа слева сообщения.}
     \While{$q \neq p$} \Comment{Значит в кольце кто-то ещё захотел стать лидером.}
         \State $List_p \gets List_p \cup {q}$
-        \State $send(<message, p>, Next(p))$ \Comment{Передаём дальше, чтобы все остальные сформировали тот же список кандидатов.}
+        \State $send(<message, q>, Next(p))$ \Comment{Передаём дальше, чтобы все остальные сформировали тот же список кандидатов.}
         \State $recv(<message, q>, Prev(p))$ \Comment{Ждём от соседа слева сообщения.}
         \State //Как только $q = p$, значит сообщение сделало полный оборот.
     \EndWhile
