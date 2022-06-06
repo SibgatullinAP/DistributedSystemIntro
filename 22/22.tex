@@ -96,7 +96,7 @@ $turn$ \Comment{переменная, в которую оба процесса 
 \Ensure \\$status[i] \in \{competing, out, cs\}$ \\
 $turn \in \{1,...N\}$ 
 
-\Do
+\Repeat
   \While{$turn \neq i$} 
 
     \If{$status[turn] == out$} 
@@ -104,7 +104,7 @@ $turn \in \{1,...N\}$
     \EndIf
   \EndWhile
   \State $status[i] = cs$
-\doWhile{$\exists other:\ status[other] = cs$}
+\Until{$\nexists other:\ status[other] = cs$}
 \State \textbf{CS}
 \State $status[i] = out$
 \end{algorithmic}
