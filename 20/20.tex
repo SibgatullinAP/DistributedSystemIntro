@@ -54,13 +54,13 @@
 Пусть событие $e_1$ произошло точно раньше события $e_2$ по нашему заданному отношению причинно-следственной зависимости (либо произошли в одном процессе и $e_1$ раньше $e_2$, либо в разных, но между ними $\exists$ цепочка попарно-сравнимых событий).
 Тогда $L(e_1) < L(e_2)$. (По построению будет так)
 
-\textbf{\hypertarget{backto}{Замечание:}} Обратное неверно! (См. рисунок. \ref{fig:image_Сomparison})
-\begin{figure}[h!]
+\textbf{Замечание:} Обратное неверно! (См. рисунок. \ref{fig:Image_comparsion})
+
+\begin{figure}[H]
 \center{\includegraphics[width=0.9\textwidth]{20/Comparison_for_labels.jpg}}
-\caption{В момент $t_0$: $2 = L_{p_2} < L_{p_1} = 3$, хотя событие $e_1 < e_2$.} \protect\hyperlink{backto}{$\circlearrowleft$}}
-\label{fig:image_Сomparison}
+\caption{В момент $t_0$: $2 = L_{p_2} < L_{p_1} = 3$, хотя событие $e_1 < e_2$.} 
+\label{fig:Image_comparsion}
 \end{figure}
-        %\includegraphics[width=0.5\textwidth]{Comparison_for_labels.jpg}
         
 Для выполнения необходимого и достаточного условия ($e_1 < e_2 \Leftrightarrow L(e_1) < L(e_2)$) реализуют механизм под названием «векторные часы». Разница с предыдущим алгоритмом лишь в том, что во всех процессах ведётся учёт временных меток не одного процесса, а целого вектора (массива) временных меток $\bar{L}_p := (L_p^1, \ldots, L_p^n)^T$ всех процессов.
 Приведём \nameref{algComparisonVecClock}.
